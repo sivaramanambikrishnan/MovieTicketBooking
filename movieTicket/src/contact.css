@@ -1,0 +1,64 @@
+.contact{
+    box-shadow: 10px 40px 15px rgba(0, 0, 0, 0.7);
+}
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Glowing border effect */
+  .contact-form {
+    animation: fadeIn 0.8s ease-in-out;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(135deg, #f9f9f9, #ffffff);
+    border: 2px solid transparent;
+    position: relative;
+  }
+  
+  /* Glowing effect on hover */
+  .contact-form:hover {
+    border-color: #0b131c2b;
+    box-shadow: 0px 0px 15px rgba(0, 123, 255, 0.153);
+  }
+  
+  /* Stylish input fields */
+  .contact-form input,
+  .contact-form textarea {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+  }
+  
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+  }
+  
+ 
+  .btn-custom {
+    background: linear-gradient(45deg, #007bff, #00c6ff);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .btn-custom:hover {
+    color: white;
+    background: linear-gradient(45deg, #0056b3, #008cff);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  

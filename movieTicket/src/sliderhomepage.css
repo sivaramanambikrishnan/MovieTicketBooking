@@ -1,0 +1,53 @@
+.slider-img-container {
+    width: 100%;
+    height: 650px; /* Fixed height for all images */
+    overflow: hidden;
+   
+    transform: scale(0.9);
+  }
+  .slider-img-container:focus{
+    outline: none;
+  }
+
+  
+  .slider-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures consistent size */
+  }
+  .slider-img-container img:hover{
+    filter: brightness(70%);
+  }
+  .slider-img-container:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.0);
+  }
+
+  .image-text-top,
+  .image-text-bottom{
+    position: absolute;
+    transform: translateX(-50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.3); 
+    padding: 10px 15px;
+    z-index: 1;
+    font-size: 18px;
+    border-radius: 5px;
+    opacity: 1;
+    white-space: nowrap; 
+
+  }
+  .image-text-top{
+       top:20px;
+       left: 50%;
+  }
+  .image-text-bottom{
+    bottom: 10px;
+    left: 90%;
+ 
+  }
+/* Change the arrow color */
+.slick-prev:before, 
+.slick-next:before {
+  color: black !important;  /* Change this to any color */
+}

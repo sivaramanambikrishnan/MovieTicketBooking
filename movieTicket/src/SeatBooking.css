@@ -1,0 +1,87 @@
+/* SeatBooking.css */
+
+.container-6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .screen {
+    width: 80%;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .seating-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .seat-row {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .seat {
+   
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #ddd;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .seat.booked {
+    background-color: rgba(128, 128, 128, 0.697) !important;
+    pointer-events: none;
+  }
+  .seat.available:hover {
+    background-color: #bbb;
+  }
+  
+  .seat.selected {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .selected-seats {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .seats{
+    display: block;
+    width: 29px;
+    height: 33px;
+    transform: translateY(-6px);
+    margin-left: 5px;
+    margin-right: 6px;
+    background-color: rgb(224, 231, 234);
+  }
+  .walking-space {
+    height: 120px;
+  }
+  .walking-space-column {
+    margin-right: 70px; 
+  }
+  
